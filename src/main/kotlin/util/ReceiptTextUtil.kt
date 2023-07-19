@@ -1,4 +1,4 @@
-package src
+package util
 
 import java.util.regex.Pattern
 import java.util.stream.Collectors
@@ -558,6 +558,10 @@ class ReceiptTextUtil {
          *
          * @param symbolsPerLine
          * Желаемое количество символов в строке (ширина чековой ленты в символах)
+         *
+         * @param containsReceiptCodes
+         * Флаг, показывающий наличие спец.символов, отвечающих за разделение чека на две части:
+         * чек клиента и чек кассира
          *
          * @return
          * Отформатированный текст, разбитый по строкам
